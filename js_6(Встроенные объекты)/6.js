@@ -29,7 +29,7 @@ console.log(Math.floor(5.6)); // 5
 
 const dateNow = new Date();
 
-let options = {
+const options = {
     year:'numeric',
     month:'long',
     day:'numeric'
@@ -38,6 +38,6 @@ let options = {
 console.log((`Сегодня ${dateNow.toLocaleString('ru-RU', options)}`));
 
 
-let minutes = dateNow.getMinutes();
-let hours = dateNow.getHours();
+const minutes = dateNow.getMinutes();
+const hours = dateNow.getHours();
 console.log(`${hours} часа ${minutes} минуты`);
