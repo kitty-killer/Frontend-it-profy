@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <header>
+                <input type="text" id="taskTitle" placeholder="Название задачи">
+                <textarea id="taskDescription" placeholder="Описание задачи"></textarea>
+                <select id="taskStatus">
+                    <option value="open">Open</option>
+                    <option value="close">Close</option>
+                    <option value="critical">Critical</option>
+                </select>
+                <button onclick="addTask()">Добавить задачу</button>
+            </header>
+        </div>
+        <div class="column">
+            <div class="filter-search">
+                <select id="statusFilter">
+                    <option value="all">Все</option>
+                    <option value="open">Open</option>
+                    <option value="close">Close</option>
+                    <option value="critical">Critical</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Поиск задач">
+                <button onclick="searchTasks()">Поиск</button>
+            </div>
+        </div>
+        <div class="column">
+            <main id="taskList"></main>
+        </div>
+    </div>
+
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <p>Вы точно хотите удалить эту задачу?</p>
+            <button class="confirm">Удалить</button>
+            <button class="cancel">Отмена</button>
+        </div>
+    </div>
+    
+   <script src="index.js"></script>
+</body>
+</html>
