@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <header>
+    <h1>Фильмы</h1>
+    <a href="favorites.html" class="favorites-link">Избранное</a>
+  </header>
+  <main>
+    <div class="movie-grid" id="movieGrid"></div>
+  </main>
+
+  
+  <div class="modal" id="movieModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <img class="modal-poster" id="modalPoster" src="" alt="Movie Poster">
+      <div class="movie-info" id="modalInfo"></div>
+      <div class="favorite-btn" id="favoriteBtn" title="Добавить в избранное">🤍</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

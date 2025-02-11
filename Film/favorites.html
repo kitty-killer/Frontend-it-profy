@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Избранное</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <header>
+    <h1>Избранное</h1>
+    <a href="index.html" class="home-link">На главную</a>
+  </header>
+  <main>
+    <div class="favorites-grid" id="favoritesGrid"></div>
+    <div class="no-favorites" id="noFavorites">
+      <p>Пока в избранном ничего нет. <a href="index.html">Перейдите на главную страницу</a>, чтобы добавить фильмы в избранное.</p>
+    </div>
+  </main>
+
+
+  <div class="modal" id="movieModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <img class="modal-poster" id="modalPoster" src="" alt="Movie Poster">
+      <div class="movie-info" id="modalInfo"></div>
+      <div class="favorite-btn" id="favoriteBtn" title="Добавить в избранное">🤍</div>
+    </div>
+  </div>
+
+  <script src="favorites.js"></script>
+</body>
+</html>
