@@ -10,7 +10,6 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #091921;
-  flex-direction: column;
 }
 
 .clock {
@@ -23,7 +22,6 @@ body {
   background-size: cover;
   border-radius: 50%;
   box-shadow: 0 -15px 15px rgba(134, 134, 134, 0.35), inset 0 -15px 15px #191919, 0 15px 15px rgba(134, 134, 134, 0.35), inset 0 15px 15px #191919;
-  position: relative;
 }
 
 .clock:before {
@@ -92,13 +90,4 @@ body {
   background-color: #fff;
   z-index: 12;
   border-radius: 6px 6px 0 0;
-}
-
-.finish, #nextDay {
-  font-size: 60px;
-  color: #ffc600;
-  font-weight: bold;
-  margin-top: 20px;
-  text-align: center;
-  position: relative;
 }/*# sourceMappingURL=style.css.map */
