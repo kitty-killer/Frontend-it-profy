@@ -66,8 +66,8 @@ class Message {
 }
 
 class UserMessage extends Message {
-    constructor(props) {
-        super(props);
+   constructor({ id, sender, text, timestamp, editedTimestamp } = {}) {
+        super({ id, sender, text, timestamp, editedTimestamp });
     }
 
     canEdit(currentUser) {
@@ -85,9 +85,9 @@ class UserMessage extends Message {
 }
 
 class SystemMessage extends Message {
-    constructor(props) {
-        super(props);
-        this.type = props.type || "info";
+    constructor({ id, sender, text, timestamp, editedTimestamp, type } = {}) {
+        super({ id, sender, text, timestamp, editedTimestamp });
+        this.type = type || "info";
     }
 
     format() {
