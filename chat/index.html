@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="user-switcher">
+                <button id="switchUser1" class="user-button">User 1</button>
+                <button id="switchUser2" class="user-button">User 2</button>
+            </div>
+            <div class="search-container">
+                <input id="searchInput" class="search-input" type="text" placeholder="Поиск сообщений...">
+            </div>
+        </div>
+        <div class="chat-container">
+            <div id="messagesContainer" class="messages-container"></div>
+            <form id="messageForm" class="message-form">
+                <input id="messageInput" class="message-input" type="text" placeholder="Введите сообщение...">
+                <button type="submit" class="btn-send">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div id="errorContainer"></div>
+    <script src="app.js"></script>
+</body>
+</html>
